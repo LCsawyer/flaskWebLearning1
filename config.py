@@ -10,7 +10,7 @@ class Config:
 	MAIL_PORT = 587
 	MAIL_USE_TLS = True
 	MAIL_USERNAME = 'seulichao@gmail.com'
-	MAIL_PASSWORD = '210013lichao'
+	MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
 	FLASKY_MAIL_SUBJECT_PREFIX = '[Flasky]'
 	FLASKY_MAIL_SENDER = 'Flasky Admin <flasky@example.com>'
 	
